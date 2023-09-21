@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" type="image/jpg" href="favicon/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TPO Etapa Inicial</title>
+</head>
+<body>
+    <header>
+        <span class="logo"><img src="img/logo.png" alt="logo" width="150" height="100"></span>
+        <span class="texto_empresa">Alma Argentina Repostería</span>
+    </header>
+    <nav>
+        <a href="index.html" class="botones">Inicio</a>
+        <a href="productos.html" class="botones">Nuestras delicias</a>
+        <a href="nosotros.html" class="botones">Nosotros</a>
+        <a href="contacto.html" class="botones">Contacto</a>
+        <a href="ubicacion.html" class="botones">Ubicacion</a>
+        <a href="pedidos.html" class="fa-solid fa-cart-shopping" style="color: black;" ></a>
+    </nav>
+
+    <p align=center>&nbsp;</p>
+    <h1 align=center><font size="+1">Se ha enviado la siguiente información como comentario:</font></h1>
+    
+    <table border="1" align=center width="226">
+        <tr>
+            <th align="center">Campo de formulario</th>
+            <th align="center">Valor del Campo</th>
+        </tr>
+    
+        <script language="javascript">
+            var args = location.search.substr(1).split('&');
+            for (var i = 0; i < args.length; ++i) {
+                var parts = args[i].split('=');
+                if (parts != null) {
+                    var field = parts[0];
+                    var value = parts[1];
+                    if (value == null) {
+                    value = "null"
+                    }
+                    else {
+                    value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+                    }
+            
+                    document.writeln('<tr><td align="center">' + field + '</td>');
+                    document.writeln('<td align="center">' + value + '</td></tr>');
+                }
+            }
+        </script>
+        
+        <noscript>
+            <tr>
+                <td>
+                    <p>Ud necesita activar Javascript en su navegador.</p>
+                    
+                    <p>En Microsoft Internet Explorer 4 o superior:</p>
+                    <ul>
+                        <li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+                        <li>Click on the "Security" tab.</li>
+                        <li>Click on the "Custom Level" button. (In IE 4, select "Custom" and then click on "Settings...".)</li>
+                        <li>Under "Active scripting" make sure "Enable" is selected.</li>
+                    </ul>
+                    
+                    <p>In Netscape version 4 or greater:</p>
+                    <ul>
+                        <li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+                        <li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+                        <li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+                        <li>Click the <b>OK</b> button.</li>
+                    </ul>
+            
+                </td>
+            </tr>
+        </noscript>
+    
+    </table>    
+
+    <footer>
+        <p>Realizado por TOTEM PYTHON GROUP T.P.O. Etapa inicial</p>
+    </footer>
+</body>
+</html>

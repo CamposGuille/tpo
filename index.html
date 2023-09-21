@@ -11,34 +11,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>TPO Etapa Inicial</title>
 </head>
-<body>
-    <header>
-        <span class="logo"><img src="img/logo.png" alt="logo" width="150" height="100"></span>
-        <span class="texto_empresa">Alma Argentina Repostería</span>
-    </header>
-    <nav>
-        <a href="index.html" class="botones">Inicio</a>
-        <a href="productos.html" class="botones">Nuestras delicias</a>
-        <a href="nosotros.html" class="botones">Nosotros</a>
-        <a href="contacto.html" class="botones">Contacto</a>
-        <a href="ubicacion.html" class="botones">Ubicacion</a>
-        <a href="pedidos.html" class="fa-solid fa-cart-shopping" style="color: black;" ></a>
-    </nav>
-    <section>
-        <div class="contenedor">
-            <img id="ft_local" src="img/repo1.jpg" alt="foto del local" width="650" height="400">
-            <img id="cocina" src="img/cocina.jpg" alt="foto de la cocina" width="250" height="300">
-            <img id="sobreimpreso" src="img/texto1.png" alt="texto sobre impreso">
-            <!-- <p>Descubre el encanto de nuestra repostería artesanal. Con recetas transmitidas de generación en generación, endulzamos momentos especiales con auténtica tradición y deliciosos sabores.</p> -->
+<body class="grid-container">
+    <header class="header">
+        <div class="header1">
+            <img class="logo" src="img/logo.png" alt="logo" width="60">
+            <h1 class="texto_empresa">Alma Argentina Repostería</h1>
         </div>
-        <aside>
-            <h2>Novedades</h2>
-            <p>- ¡Te invitamos a nuestro nuevo rincón delicioso! Hemos creado un espacio acogedor donde podrás deleitarte con nuestras exquisitas tortas y postres, acompañados del mejor café o una selección de tés únicos. Sumérgete en un ambiente que combina el sabor de la tradición familiar con la dulzura de nuestros productos. ¡Esperamos verte pronto para compartir momentos dulces y memorables!.</p>
-            <p>- Hemos creado un pastel exclusivo que combina la suavidad de la crema con la intensidad de los frutos del bosque. Cada bocado es una explosión de sabores que te transportará a un mundo de dulzura. Ven y descubre esta delicia que ha conquistado los corazones de nuestros clientes. ¡Te esperamos para que lo pruebes!</p>
-        </aside>
-    </section>
-    <footer>
+    </header>
+
+    <!-- <div class="header2"> -->
+        <nav class="navbar">
+            <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="toggle-menu">
+
+            <ul class="navbar-list">
+                <li><a href="index_nuevo2.html" class="navbar-link">Inicio</a></li>
+                <li><a href="productos.html" class="navbar-link">Nuestras Delicias</a></li>
+                <li><a href="nosotros.html" class="navbar-link">Nosotros</a></li>
+                <li><a href="contacto.html" class="navbar-link">Contacto</a></li>
+                <li><a href="ubicacion.html" class="navbar-link">Ubicacion</a></li>
+                
+                <a href="pedidos.html" class="fa-solid fa-cart-shopping" style="color: black;" ></a>
+            </ul>
+        </nav>
+
+    <!-- </div> -->
+
+
+
+    <article class="article">
+        <img id="ft_local" src="img/repo1.jpg" alt="foto del local" width="300">
+        <img id="cocina" src="img/cocina.jpg" alt="foto de la cocina">
+    
+    </article>
+
+    <aside class="aside">
+        <h2>Novedades</h2>
+        <p>- ¡Te invitamos a nuestro nuevo rincón delicioso! Hemos creado un espacio acogedor donde podrás deleitarte con nuestras exquisitas tortas y postres, acompañados del mejor café o una selección de tés únicos. Sumérgete en un ambiente que combina el sabor de la tradición familiar con la dulzura de nuestros productos. ¡Esperamos verte pronto para compartir momentos dulces y memorables!.</p>
+        <p>- Hemos creado un pastel exclusivo que combina la suavidad de la crema con la intensidad de los frutos del bosque. Cada bocado es una explosión de sabores que te transportará a un mundo de dulzura. Ven y descubre esta delicia que ha conquistado los corazones de nuestros clientes. ¡Te esperamos para que lo pruebes!</p>
+    </aside>
+
+    <footer class="footer">
         <p>Realizado por TOTEM PYTHON GROUP T.P.O. Etapa inicial</p>
+        <p>* Despues agregamos los logos de las redes sociales</p>
     </footer>
 </body>
 </html>
