@@ -11,26 +11,59 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>TPO Etapa Inicial</title>
 </head>
-<body>
-    <header>
-        <span class="logo"><img src="img/logo.png" alt="logo" width="150" height="100"></span>
-        <span class="texto_empresa">Alma Argentina Repostería</span>
+<body class="grid-container-nosotros">
+    <header class="header">
+        <div class="header1">
+            <img class="logo" src="img/logo.png" alt="logo" width="60">
+            <h1 class="texto_empresa">Alma Argentina Repostería</h1>
+        </div>
     </header>
-    <nav>
-        <a href="index.html" class="botones">Inicio</a>
-        <a href="productos.html" class="botones">Nuestras delicias</a>
-        <a href="nosotros.html" class="botones">Nosotros</a>
-        <a href="contacto.html" class="botones">Contacto</a>
-        <a href="ubicacion.html" class="botones">Ubicacion</a>
-        <a href="pedidos.html" class="fa-solid fa-cart-shopping" style="color: black;" ></a>
-    </nav>
+        <nav class="navbar">
+            <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="toggle-menu">
 
-    <main>
-        <h2>Pagina sobre los maestros pasteleros que cambia a integrantes del TPO</h2>
-        <h2>Coming soon !!!!</h2>
-    </main>
+            <ul class="navbar-list">
+                <li><a href="index.html" class="navbar-link">Inicio</a></li>
+                <li><a href="productos.html" class="navbar-link">Nuestras Delicias</a></li>
+                <li><a href="nosotros.html" class="navbar-link">Nosotros</a></li>
+                <li><a href="contacto.html" class="navbar-link">Contacto</a></li>
+                <li><a href="ubicacion.html" class="navbar-link">Ubicacion</a></li>
+                
+                <a href="pedidos.html" class="fa-solid fa-cart-shopping" style="color: black;" ></a>
+            </ul>
+        </nav>
+    <div class="contenedor-nosotros">
+        <div class="item1">
+            <span class="span-nosotros">Nuestras historia</span>
+        </div>
+        <div class="item2">
+            <img class="nosFondo" src="img/nosFondo.png" width="200">
+            <p>En el corazón de nuestra cocina se encuentra una tradición familiar que se remonta a generaciones. Desde nuestros abuelos hasta hoy, hemos compartido el amor por la repostería. Cada postre es una página de nuestra historia, un regalo de sabor que esperamos que disfrutes tanto como nosotros disfrutamos creándolo.</p>
+            <p>¡Bienvenido a nuestro mundo de dulzura y tradición!</p>
+        </div>
+        <div id="pastelero" class="item3">
+            <img class="nosPerfil" src="img/perfil1.jpg" width="80px">
+            <span class="span-nosotros"> Maestro Pastelero</span>
+            <p>Un artista del sabor, nuestro maestro pastelero es un apasionado de la repostería. Con manos expertas y creatividad inagotable, transforma ingredientes simples en obras maestras dulces. Su búsqueda constante de la perfección y su amor por los detalles se reflejan en cada postre que sale de nuestra cocina. Descubre el toque mágico de sus creaciones en cada bocado. </p>
+        </div>
+        <div id="salon" class="item3">
+            <span class="span-nosotros">Jefa de Salón</span>
+            <img class="nosPerfil" src="img/perfil2.jpg" width="80px">
+            <p>Con una sonrisa cálida y atención inigualable, nuestra jefa de salón hace que cada visita sea especial. Su pasión por crear experiencias excepcionales y su capacidad para anticipar tus necesidades te harán sentir como en casa. Siempre lista para hacer que tu tiempo con nosotros sea inolvidable, confía en ella para que tu experiencia sea única y placentera. </p>
+        </div>
+        <div id="admin" class="item3">
+            <img class="nosPerfil" src="img/perfil3.jpg" width="80px">
+            <span class="span-nosotros">Encargado Administrativo</span>
+            <p>Nuestro pilar en la gestión, nuestro encargado administrativo combina precisión y dedicación. Con su destreza en números y su habilidad para mantener todo en orden, garantiza que nuestra repostería funcione sin problemas. Su compromiso con la eficiencia y la calidad son esenciales para que podamos seguir endulzando tu día de la mejor manera posible.</p>
+        </div>
+        <div id="gral" class="item3">
+            <span class="span-nosotros">Coordinadora General</span>
+            <img class="nosPerfil" src="img/perfil4.jpg" width="80px">
+            <p>Líder apasionada y visionaria, nuestra gerente general es la fuerza impulsora detrás de nuestra dulce historia de éxito. Su determinación, creatividad y compromiso con la excelencia guían a nuestro equipo hacia horizontes más dulces. Su habilidad para tomar decisiones audaces y su amor por la repostería son la receta secreta de nuestro crecimiento continuo.</p>
+        </div>
+    </div>
 
-    <footer>
+    <footer class="footer">
         <p>Realizado por TOTEM PYTHON GROUP   T.P.O. Etapa inicial</p>
     </footer>
 </body>

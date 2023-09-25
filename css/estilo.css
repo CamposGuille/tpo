@@ -202,7 +202,7 @@ header {
     margin: 10px;
 }
 .ubicacion img{
-    max-width: 100px; /*buscar de mejorar la posición*/
+    max-width: 400px; /*buscar de mejorar la posición*/
 }
 .ubicacion p{
     font-size: 20px;
@@ -214,10 +214,81 @@ header {
 
 @media(min-width:518px){
     #globo{
-        display: none;
+        width: 0px;
+        /* display: none; */
     }
 }
 /*  ---- fin de estilo pagina ubicación ---- */
+
+
+/*---------- estilo de la pagina Nosotros ----------*/
+.contenedor-nosotros{
+    display: grid;
+    gap:5px;
+    text-align: center;
+    padding: 10px;
+    font-size:65%;
+    grid-template-columns: auto;
+    grid-template-rows: auto;/*200px 30px 250px 180px 100px;*/
+    grid-template-areas:
+    "historia"
+    "historia1"
+    "pastelero"
+    "salon"
+    "admin"
+    "gral";
+}
+
+    #pastelero{
+        grid-area: pastelero;
+    }
+    #salon{
+        grid-area: salon;
+    }    
+    #admin{
+        grid-area: admin;
+    }
+    #gral{
+        grid-area: gral;
+    }
+    .span-nosotros{
+        font-size: 5vw;
+    }
+
+    .item1{
+        grid-area: historia;
+        background-color: whitesmoke;
+        margin: 10px;
+        border-radius: 12px;
+        text-align: center;
+        padding: 10px;
+    }
+    .item2{
+        grid-area: historia1;
+        background-color: whitesmoke;
+        text-align: center;
+        margin: -25px 10px 10px 10px;
+        padding-top: 10px;
+        border-radius: 12px;
+    }
+    .item2 p{
+        font-size: 3.5vw;
+    }
+    .item3{
+        /* max-width: 400px; */
+        /* grid-area: pastelero; */
+        background-color: whitesmoke;
+        margin: 10px;
+        border-radius: 12px;
+        text-align:center;
+        padding: 10px;
+    }
+    .item3 img{
+        border-radius: 50%;
+        border: solid;
+    }
+/*---------- Fin estilo de la pagina Nosotros ----------*/
+
 
 @media(min-width:680px){
     .navbar{
@@ -303,6 +374,27 @@ header {
         "."
         "footer";
     }
+    .item2{
+        margin: 10px;
+    }
+    .span-nosotros{
+        font-size: 3vw;
+    }
+    .item2 p{
+        font-size: 2vw;
+    }
+    .contenedor-nosotros{
+        font-size:100%;
+        grid-template-columns: auto;
+        grid-template-rows: auto;/*200px 30px 250px 180px 100px;*/
+        grid-template-areas:
+        "historia historia historia"
+        "historia1 historia1 historia1"
+        "pastelero . salon"
+        /* "salon" */
+        "admin . gral";
+        /* "gral"; */
+    }
 }
 
 @media(min-width:1200px){
@@ -326,13 +418,39 @@ header {
         "article article"
         "footer footer footer";
     }
+    #globo{
+        width: 300px;
+    }
     .grid-container-ubicacion{
         font-size:100%;
-        grid-template-rows:170px 35px 450px 100px;
+        grid-template-rows:170px 35px 400px 100px;
         grid-template-areas:
         "header"
         "navbar"
         "."
         "footer";
+    }
+     /* .span-nosotros{
+        font-size: 3vw;
+    } */
+    /* .item2 p{
+        font-size: 2vw;
+    }  */
+    .fto{
+        grid-area: fto;
+    }
+    .contenedor-nosotros{
+        font-size:100%;
+        grid-template-columns: auto;
+        grid-template-rows: auto;/*200px 30px 250px 180px 100px;*/
+        grid-template-areas:
+        "historia historia historia"
+        "historia1 pastelero salon"
+        "historia1 admin gral";
+
+        /* "pastelero . salon" */
+        /* "salon" */
+        /* "admin . gral"; */
+        /* "gral"; */
     }
 }
