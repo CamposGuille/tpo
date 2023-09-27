@@ -215,7 +215,6 @@ header {
 @media(min-width:518px){
     #globo{
         width: 0px;
-        /* display: none; */
     }
 }
 /*  ---- fin de estilo pagina ubicación ---- */
@@ -289,6 +288,66 @@ header {
     }
 /*---------- Fin estilo de la pagina Nosotros ----------*/
 
+/*----------Inicia Contacto ---------------*/
+
+.formulario {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    /* height: 50vh; */
+}
+.container {
+    background-color: #c97c5d;
+    width: 450px;
+    transition: width 5s;
+    padding: 20px;
+    border-radius: 12px;
+}
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.form-group label {
+    font-size: 20px;
+    font-weight: bold;
+    width: 150px;
+    text-align: left;
+    margin-right: 10px;
+}
+input, textarea {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: var(--fondo3);
+    border-radius: 5px;
+    font-size: 16px;
+}
+textarea {
+    resize: vertical;
+}
+.submit-button {
+    text-align: center;
+}
+.submit-button button {
+    padding: 10px 20px;
+    background-color: var(--fondo2);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.submit-button button:hover {
+    background-color: var(--fondo1);
+}
+
+/*------------finaliza contacto ------------*/
 
 @media(min-width:680px){
     .navbar{
@@ -299,18 +358,15 @@ header {
         border-radius: 12px;
         padding-right: 20px;
         padding-top: 10px;
-        /* margin-top: -20px; */
         font-size: 1.4vw;
     }   
     .aside{
         max-height: 280px;
-        /* margin: auto; */
     }
     #ft_local{
         max-width: 400px; 
     }
     .article{
-        /* margin: auto; */
         max-height: 280px;
     }
     .grid-container{
@@ -318,7 +374,6 @@ header {
         grid-template-columns: auto;
         grid-template-rows:70px 25px 280px 100px;
         grid-template-areas:
-        /* grid-template  */
         "header header header"
         "navbar navbar navbar"
         "article article aside"
@@ -359,7 +414,6 @@ header {
         grid-template-columns: auto;
         grid-template-rows:90px 25px 450px 100px;
         grid-template-areas:
-        /* grid-template  */
         "header header header"
         "navbar aside aside"
         "article article"
@@ -391,9 +445,10 @@ header {
         "historia historia historia"
         "historia1 historia1 historia1"
         "pastelero . salon"
-        /* "salon" */
         "admin . gral";
-        /* "gral"; */
+    }
+    .container {
+        width: 650px;
     }
 }
 
