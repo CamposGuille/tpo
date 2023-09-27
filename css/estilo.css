@@ -300,7 +300,7 @@ header {
 .container {
     background-color: #c97c5d;
     width: 450px;
-    transition: width 5s;
+    transition: width 4s;
     padding: 20px;
     border-radius: 12px;
 }
