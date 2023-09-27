@@ -494,6 +494,16 @@ textarea {
     .fto{
         grid-area: fto;
     }
+    .grid-container-nosotros{
+        display: grid;
+        font-size:100%;
+        grid-template-rows:170px 35px auto 100px;
+        grid-template-areas:
+        "header"
+        "navbar"
+        "."
+        "footer";
+    }
     .contenedor-nosotros{
         font-size:100%;
         grid-template-columns: auto;
@@ -503,5 +513,18 @@ textarea {
         "historia1 pastelero salon"
         "historia1 admin gral";
 
+    }
+    .grid-container-contacto{
+        display: grid;
+        font-size:100%;
+        grid-template-rows:170px 35px 500px 100px;
+        grid-template-areas:
+        "header"
+        "navbar"
+        "."
+        "footer";
+    }
+    .container {
+        width: 850px;
     }
 }
