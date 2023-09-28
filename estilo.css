@@ -1,0 +1,182 @@
+body{
+    background-color: #f3cfb4;/* #c97c5d;*/
+    font-family: Calibri, sans-serif;
+}
+header{
+    text-align: left; 
+}
+nav{
+    /*background-color: #7e443b; /*rgba(230, 192, 65, 0.767);*/
+    background-image: linear-gradient(120deg, #eed7c5 0%, #b36a56 100%);
+    text-align: right;
+    text-decoration: none;
+    height: 30px;
+    border-radius: 12px;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin-top: -20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.botones{
+    text-decoration: none;
+    font-size: 110%;
+    padding: 12px;
+    color: #000;
+    /*background-color: #f8c49c;*/
+    text-align: center;
+    /*border-radius: 12px;*/
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.botones:hover{
+    background-color: #b36a56;
+    color: #fff;
+}
+aside{
+    float:right;
+    background-color: #c97c5d ;/*rgba(230, 192, 65, 0.767);*/
+    color: white;
+    overflow: hidden;
+    margin-top: -450px;
+    margin-left: 75%;
+    padding: 1%;
+    border-radius: 12px;
+}
+
+footer{
+color: #000;
+text-align: center;
+}
+
+.contenedor{
+    background-color: #f8c49c;/*rgba(230, 192, 65, 0.2);*/
+    display: inline-block;
+    border-radius: 12px;
+    width: 74%;
+    height: 450px;
+    margin-top: 10px;
+    text-align: center;
+}
+.contenedor img{
+    margin-top: 2%;
+    margin-left: -10%;
+    border-radius: 15%;
+    width: 65%;
+    height: 92%;
+}
+#sobreimpreso{
+    margin-left: -20%;
+    border-radius: 0;
+    width: 40%;
+    height: 30%;
+    margin-bottom: 40px;
+    /* margin-left: 2px; */
+}
+.contenedor p{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin-top: -15%;
+    margin-left: 50%;
+    width: 40%;
+    /*max-height: 120px;*/
+    font-size: 140%;
+    color: #000;
+}
+.texto_empresa{
+    color: #c97c5d;
+    font-size: 7.5vw;
+    padding-left: 2rem;
+    font-family: 'Dancing Script', cursive;
+}
+/* .logo{
+    width: 100px;
+} */
+.ubicacion{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.ubicacion img{
+    padding-left: 10%;
+    margin-bottom: 2%;
+}
+/* input{
+    display: block;
+} */
+/* .formulario{
+    margin: 5%;
+    background-color: blue;
+    border: 20px;
+    border-color: orange;
+    width: 60%;
+    border-radius: 10%;
+} */
+
+/* ----------- Formularios ----------- */
+label, input {
+    font-size: 1.0vw;
+}
+input[type=text], input[type=password], input[type=date], input[type=email], input[type=number], 
+  input[type=url], input[type=tel], input[type=textArea], select {
+    width: 80%;
+    padding: 1vw; /* 12px 20px */
+    margin: 1vw; /*8px 0;*/
+    display: inline-block;
+    border: 1vw; /* 1px solid #CCC */
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+input[type=submit] {
+    width: 100%;
+    background-color: #f8c49c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #c97c5d;
+}
+
+.formulario {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 2%;
+    margin: 1% 20%;
+}
+
+textarea {
+    width: 90%;
+}
+h2{
+    
+    text-align:left;
+}
+.imagen{
+    width: 350px;
+    height: 200px;
+    margin: 40px;
+
+}
+h2{
+    display: flex;
+}
+
+    
+
+    
+    
+
+    
+
+
+
+    
