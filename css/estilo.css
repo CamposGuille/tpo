@@ -30,7 +30,7 @@ body {
     padding: 10px;
     font-size:65%;
     grid-template-columns: auto;
-    grid-template-rows:50px 30px 250px 180px 100px;
+    grid-template-rows:50px 30px 250px 180px 70px;
     grid-template-areas:
     "header"
     "navbar"
@@ -59,8 +59,11 @@ header {
     font-size: 6.5vw;
     padding: 0 20px;
     font-family: var(--font-family);
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.596));
 }
-
+.logo{
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.596));
+}
 .navbar {
     background: var(--fondo2); /* comentado para probar gradiente  var(--fondo4);*/
     border-radius: 12px;
@@ -177,13 +180,14 @@ header {
 .footer{
     grid-area: footer;
     background-color: var(--fondo-footer);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     padding: 10px;
     border-radius: 12px;
 }
+.redsocial{
+    align-items: center;
+    margin: 20px 15px 0px 15px;
+} 
 /*  ------ estilo para pagina de ubicación ------- */
 .grid-container-ubicacion{
     display: grid;
@@ -191,7 +195,7 @@ header {
     padding: 10px;
     font-size:65%;
     grid-template-columns: auto;
-    grid-template-rows:50px 30px auto 100px;
+    grid-template-rows:50px 30px auto 70px;
     grid-template-areas:
     "header"
     "navbar"
@@ -350,6 +354,56 @@ textarea {
 
 /*------------finaliza contacto ------------*/
 
+/* ------------ Inicia Productos ------------*/
+.caja-imagenes{
+    grid-area: productos;
+    background-color: var(--fondo1);
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ficha{
+    background-color: var(--fondo3) ;
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.596));
+    justify-items: center;
+    border-radius: 12px;
+    width: 170px;
+    height: 200px;
+    display: grid;
+    margin: 10px;
+    padding: 30px;
+}
+.ficha img{
+    width: 100px;
+}
+.aside iframe{
+    margin-top: 10px;
+    border: solid;
+    border-radius: 12px;
+}
+
+.grid-container-productos{
+    display: grid;
+    gap:5px;
+    text-align: center;
+    padding: 10px;
+    font-size:65%;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 30px 300px auto 70px;
+    grid-template-areas:
+    "header"
+    "navbar"
+    "aside"
+    "productos"
+    "footer";
+}
+
+
+/* ------------ finaliza Productos ----------- */
+
 @media(min-width:680px){
     .navbar{
         background-image: var(--fondo4);
@@ -373,7 +427,7 @@ textarea {
     .grid-container{
         font-size: 100%;
         grid-template-columns: auto;
-        grid-template-rows:70px 25px 280px 100px;
+        grid-template-rows:70px 25px 280px 80px;
         grid-template-areas:
         "header header header"
         "navbar navbar navbar"
@@ -386,7 +440,7 @@ textarea {
         padding: 10px;
         font-size:65%;
         grid-template-columns: auto;
-        grid-template-rows:70px 25px auto 100px;
+        grid-template-rows:70px 25px auto 80px;
         grid-template-areas:
         "header"
         "navbar"
@@ -397,6 +451,23 @@ textarea {
         width: 400px;
         height: 300px;
     }
+    .grid-container-productos{
+        display: grid;
+        gap:5px;
+        text-align: center;
+        padding: 10px;
+        font-size:65%;
+        grid-template-columns: 40% auto;
+        grid-template-rows: 70px 25px auto 70px;
+        grid-template-areas:
+        "header header header"
+        "navbar navbar navbar"
+        "productos productos aside"
+        "footer footer footer";
+    }
+    .aside iframe{
+        width: 100%;
+    } 
 }
 @media(min-width:900px){
     .header1{
@@ -417,7 +488,7 @@ textarea {
     .grid-container{
         font-size: 100%;
         grid-template-columns: auto;
-        grid-template-rows:90px 25px 450px 100px;
+        grid-template-rows:90px 25px 450px 80px;
         grid-template-areas:
         "header header header"
         "navbar aside aside"
@@ -426,7 +497,7 @@ textarea {
     }
     .grid-container-ubicacion{
         font-size:100%;
-        grid-template-rows:90px 25px 400px 100px;
+        grid-template-rows:90px 25px 400px 80px;
         grid-template-areas:
         "header"
         "navbar"
@@ -470,7 +541,7 @@ textarea {
     .grid-container{
         font-size: 100%;
         grid-template-columns: 78% auto;
-        grid-template-rows:150px 35px 450px 100px;
+        grid-template-rows:150px 35px 450px 90px;
         grid-template-areas:
         /* grid-template  */
         "header header header"
@@ -483,7 +554,7 @@ textarea {
     }
     .grid-container-ubicacion{
         font-size:100%;
-        grid-template-rows:170px 35px 500px 100px;
+        grid-template-rows:170px 35px 500px 90px;
         grid-template-areas:
         "header"
         "navbar"
@@ -506,7 +577,7 @@ textarea {
     .grid-container-nosotros{
         display: grid;
         font-size:100%;
-        grid-template-rows:170px 35px auto 100px;
+        grid-template-rows:170px 35px auto 90px;
         grid-template-areas:
         "header"
         "navbar"
@@ -526,7 +597,7 @@ textarea {
     .grid-container-contacto{
         display: grid;
         font-size:100%;
-        grid-template-rows:170px 35px 500px 100px;
+        grid-template-rows:170px 35px 500px 90px;
         grid-template-areas:
         "header"
         "navbar"
@@ -536,6 +607,23 @@ textarea {
     .container {
         width: 850px;
     }
+    .grid-container-productos{
+        display: grid;
+        gap:5px;
+        text-align: center;
+        padding: 10px;
+        font-size:65%;
+        grid-template-columns: 40% auto;
+        grid-template-rows: 170px 35px auto 90px;
+        grid-template-areas:
+        "header header header"
+        "navbar navbar navbar"
+        "productos productos aside"
+        "footer footer footer";
+    }
+    .aside iframe{
+        max-width: 400px;
+    } 
 }
 
 @media(min-width:1500px){

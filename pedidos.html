@@ -11,25 +11,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>TPO Etapa Inicial</title>
 </head>
-<body>
-    <header>
-        <span class="logo"><img src="img/logo.png" alt="logo" width="150" height="100"></span>
-        <span class="texto_empresa">Alma Argentina Repostería</span>
+<body class="grid-container">
+    <header class="header">
+        <div class="header1">
+            <img class="logo" src="img/logo.png" alt="logo" width="80">
+            <h1 class="texto_empresa">Alma Argentina Repostería</h1>
+        </div>
     </header>
-    <nav>
-        <a href="index.html" class="botones">Inicio</a>
-        <a href="productos.html" class="botones">Nuestras delicias</a>
-        <a href="nosotros.html" class="botones">Nosotros</a>
-        <a href="contacto.html" class="botones">Contacto</a>
-        <a href="ubicacion.html" class="botones">Ubicacion</a>
-        <a href="pedidos.html" class="fa-solid fa-cart-shopping" style="color: black;" ></a>
-    </nav>
+        <nav class="navbar">
+            <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="toggle-menu">
+
+            <ul class="navbar-list">
+                <li><a href="index.html" class="navbar-link">Inicio</a></li>
+                <li><a href="productos.html" class="navbar-link">Nuestras Delicias</a></li>
+                <li><a href="nosotros.html" class="navbar-link">Nosotros</a></li>
+                <li><a href="contacto.html" class="navbar-link">Contacto</a></li>
+                <li><a href="ubicacion.html" class="navbar-link">Ubicacion</a></li>
+                
+                <a href="pedidos.html" class="fa-solid fa-cart-shopping" style="color: black;" ></a>
+            </ul>
+        </nav>
     <main>
         <h2>Pedidos</h2>
     </main>
 
-    <footer>
-        <p>Realizado por TOTEM PYTHON GROUP   T.P.O. Etapa inicial</p>
+    <footer class="footer">
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+        <p>Realizado por TOTEM PYTHON GROUP T.P.O. Etapa inicial</p>
+        <iconify-icon class="redsocial" icon="entypo-social:twitter"></iconify-icon>
+        <iconify-icon class="redsocial" icon="entypo-social:facebook"></iconify-icon>
+        <iconify-icon class="redsocial" icon="entypo-social:500px"></iconify-icon>
+        <iconify-icon class="redsocial" icon="entypo-social:google"></iconify-icon>
+        <iconify-icon class="redsocial" icon="entypo-social:pinterest"></iconify-icon>
+        <iconify-icon class="redsocial" icon="entypo-social:paypal"></iconify-icon>
     </footer>
 </body>
 </html>
