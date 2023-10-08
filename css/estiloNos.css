@@ -39,11 +39,12 @@ header {
     align-items: center;
     background-color: var(--fondo3);
     overflow: hidden;
+    transition: transform 1s ease;
 }
 
 .texto_empresa{
     color: var(--letra);
-    font-size: 6.5vw;
+    font-size: 6vw;
     padding: 0 20px;
     font-family: var(--font-family);
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.596));
@@ -158,7 +159,7 @@ header {
     gap:5px;
     text-align: center;
     padding: 10px;
-    font-size:65%;
+    /* font-size:15%; */
     grid-template-columns: auto;
     grid-template-rows: auto;/*200px 30px 250px 180px 100px;*/
     grid-template-areas:
@@ -216,6 +217,58 @@ header {
         border-radius: 50%;
         border: solid;
     }
+
+    .nuevo-titulo span{
+        margin-top: -250px;
+        display: block;
+        font-family: var(--font-family);
+        white-space: nowrap;
+        border-right: 2px solid;
+        width: 12ch;
+        font-size: 5rem;
+        animation: typing 5s steps(15) infinite;
+        overflow: hidden;
+        transition: margin-left 3s;
+        filter: drop-shadow(10px 15px 15px rgb(248, 183, 2));
+    }
+    @keyframes typing{
+        from{width: 0}
+    }
+    .tapa-nav{
+        width: 100%;
+        height: 30px;
+        transform: translateX(2300px);
+        text-align: end;
+        background-color: #000;
+        color: rgb(252, 207, 11);
+        transition: transform 2s;
+    }
+    .totem1{
+        width: 1px;
+        margin-left: -1650px;
+        transition: scale 4s, transform 2s ease-out;
+        z-index: 1;
+    }
+    .totem2{
+        width: 1px;
+        scale: 1%;
+        transition: scale 4s, transform 2s ease-out;
+        z-index: 1;
+    }
+    .totem3{
+        width: 1px;
+        scale: 1%;
+        margin-left: 1350px;
+        transition: scale 4s, transform 2s ease-out;
+        z-index: 1;
+    }
+    .totem4{
+        width: 1px;
+        scale: 1%;
+        margin-left: -1350px;
+        transition: scale 4s, transform 2s ease-out;
+        z-index: 1;
+    }
 /*---------- Fin estilo de la pagina Nosotros ----------*/
 
 
@@ -227,29 +280,79 @@ header {
     .para-cambiar:hover{
         background-color: #000;
         transition: background-color 8s;
-
+    }
+    .para-cambiar:hover .header1{
+        background-color: #000;
+        transition: background-color 8s;
     }
     .para-cambiar:hover .logo{
-        transform: translateX(1000px);
+        transform: translateX(2000px);
         transition: transform 8s ease;
     }
     .para-cambiar:hover .texto_empresa{
         transform: translateY(-200px);
         transition: transform 8s ease;
     }
+    .para-cambiar:hover .nuevo-titulo span{ /* ******************************************/
+        color: rgb(255, 212, 23);
+        transform: translateY(150px);
+        transition: transform 8s ease;
+        z-index: 1;
+    }
+    .para-cambiar:hover .totem1{
+        transform: translateY(10px) translateX(20px);
+        width: 5px;
+        scale: 1500%;
+        transition: transform 8s ease-out;
+    }
+    .para-cambiar:hover .totem2{
+        transform: translateY(18px) translateX(-35px);
+        width: 5px;
+        scale: 1500%;
+        transition: transform 8s ease;
+        transition: scale 10s;
+    }
+    .para-cambiar:hover .totem3{
+        transform: translateY(24px) translateX(-80px);
+        width: 5px;
+        scale: 1500%;
+        transition: transform 8s ease-in-out;
+        transition: scale 6s;
+    }
+    .para-cambiar:hover .totem4{
+        transform: translateY(31px) translateX(10px);
+        width: 5px;
+        scale: 1500%;
+        transition: transform 8s ease-in-out;
+        transition: scale 6s;
+    }
+    .para-cambiar:hover .contenedor-nosotros{
+        height: 550px;
+        overflow: hidden;
+    }
+    .para-cambiar:hover .tapa-nav{
+        padding-right: 200px;
+        transform: translateX(-3000px);
+        transform: translateY(28px);
+        transition: transform 8s ease-out;
+    }
     .para-cambiar:hover .item1{
-        transform: translateX(-1500px);
+        transform: translate(-2000px, -28px);
         transition: transform 8s ease;
     }
     .para-cambiar:hover .item2{
         background-color: #000;
         transition: background-color 8s;
     }
+    .para-cambiar:hover .nosFondo{
+        transform: translateX(2000px);
+        transition: transform 8s ease;        
+    }
 
 
     .navbar{
         background-image: var(--fondo4);
-       justify-content: end; /*para que los textos del nav se vayan al fondo*/
+        justify-content: end; /*para que los textos del nav se vayan al fondo*/
         height: 25px;
         border-radius: 12px;
         padding-right: 20px;
