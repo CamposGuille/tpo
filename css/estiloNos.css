@@ -184,7 +184,7 @@ header {
         grid-area: gral;
     }
     .span-nosotros{
-        font-size: 5vw;
+        font-size: 3vw;
     }
 
     .item1{
@@ -204,7 +204,7 @@ header {
         border-radius: 12px;
     }
     .item2 p{
-        font-size: 3.5vw;
+        font-size: 2.5vw;
     }
     .item3{
         background-color: whitesmoke;
@@ -360,7 +360,7 @@ header {
         font-size: 1.4vw;
     }   
 }
-/* @media(min-width:900px){
+/*@media(min-width:900px){
     .header1{
         max-height: 120px;
     }
