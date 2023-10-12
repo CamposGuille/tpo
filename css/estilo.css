@@ -372,10 +372,10 @@ textarea {
     justify-items: center;
     border-radius: 12px;
     width: 170px;
-    height: 200px;
+    height: 220px;
     display: grid;
     margin: 10px;
-    padding: 30px;
+    padding: 20px;
 }
 .ficha:hover{
     scale: 1.5;
@@ -389,9 +389,11 @@ textarea {
 }
 .ficha img{
     width: 100px;
+    border-radius: 10px;
+    margin-bottom: 8px;
 }
 .aside iframe{
-    margin-top: 10px;
+    margin-top: 8px;
     border: solid;
     border-radius: 12px;
 }
@@ -479,6 +481,18 @@ textarea {
     .aside iframe{
         width: 100%;
     } 
+    /*************************************** estilo simple para pedidos **********************/
+    .cont_comprado{
+        background-color: var(--fondo1);
+        color: var(--fondo3);
+        margin: 30px;
+        padding: 30px;
+    }
+    .cont_comprado .listado{
+        font-size: 30px;
+        padding: 20px;
+    }
+    /*************************************** FIN de estilo simple para pedidos **************/
 }
 @media(min-width:900px){
     .header1{

@@ -14,7 +14,7 @@
 <body class="grid-container-productos">
     <header class="header">
         <div class="header1">
-            <img class="logo" src="img/logo.png" alt="logo" width="60">
+            <img class="logo" src="img/logo.png" alt="logo" width="80">
             <h1 class="texto_empresa">Alma Argentina Repostería</h1>
         </div>
     </header>
@@ -45,47 +45,42 @@
     <div class="caja-imagenes">
         <div class="ficha" >
             <img src="img/ft1.jpg">
-            <span>Descripción de producto</span>
-            <span>Precio</span>
+            <span id="prod1Desc">Banana Split</span>
+            <span id="prod1Prec">$ 1700</span>
             <span class="submit-button">
-                <button type="submit" >Comprar</button>
+                <button type="button" onclick="agregarAlCarrito('prod1Desc', 'prod1Prec')">Comprar</button>
             </span>
         </div>
         <div class="ficha" >
             <img src="img/ft2.jpg">
-            <span>Descripción de producto</span>
-            <span>Precio</span>
+            <span id="prod2Desc">Ni idea que es pero tiene arandamos</span>
+            <span id="prod2Prec">$ 2200</span>
             <span class="submit-button">
-                <button type="submit" >Comprar</button>
+                <button type="button" onclick="agregarAlCarrito('prod2Desc', 'prod2Prec')">Comprar</button>
             </span>
         </div>        
         <div class="ficha" >
             <img src="img/ft3.jpg">
-            <span>Descripción de producto</span>
-            <span>Precio</span>
+            <span id="prod3Desc">Tarta de manzana</span>
+            <span id="prod3Prec">$ 1200</span>
             <span class="submit-button">
-                <button type="submit" >Comprar</button>
+                <button type="button" onclick="agregarAlCarrito('prod3Desc', 'prod3Prec')">Comprar</button>
             </span>
         </div>  
-        <!-- <div class="ficha" >
-            <img src="img/ft4.jpg">
-            <span>Descripción de producto</span>
-            <span>Precio</span>
-        </div> -->
         <div class="ficha" >
             <img src="img/ft5.jpg">
-            <span>Descripción de producto</span>
-            <span>Precio</span>
+            <span id="prod4Desc">Cheesecake con cubierta de frutilla</span>
+            <span id="prod4Prec">$ 1800</span>
             <span class="submit-button">
-                <button type="submit" >Comprar</button>
+                <button type="button" onclick="agregarAlCarrito('prod4Desc', 'prod4Prec')">Comprar</button>
             </span>
         </div>        
         <div class="ficha" >
             <img src="img/ft6.jpg">
-            <span>Descripción de producto</span>
-            <span>Precio</span>
+            <span id="prod5Desc">Cheesecake Clasico</span>
+            <span id="prod5Prec">$ 1600</span>
             <span class="submit-button">
-                <button type="submit" >Comprar</button>
+                <button type="button" onclick="agregarAlCarrito('prod5Desc', 'prod5Prec')">Comprar</button>
             </span>
         </div> 
         <div class="ficha" >
@@ -108,6 +103,7 @@
         <iconify-icon class="redsocial" icon="entypo-social:pinterest"></iconify-icon>
         <iconify-icon class="redsocial" icon="entypo-social:paypal"></iconify-icon>
     </footer>
+    <script src="js/compra.js"></script>
 </body>
 </html>
         
