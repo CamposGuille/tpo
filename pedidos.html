@@ -32,9 +32,23 @@
                 <a href="pedidos.html" class="fa-solid fa-cart-shopping" style="color: black;" ></a>
             </ul>
         </nav>
-    <main>
-        <h2>Pedidos</h2>
-    </main>
+    <section class="acomodarDespues">
+        <div class="cont_comprado">
+            <span class="listado" id="liDesc">Descripción</span>
+            <span class="listado" id="liPrec">Precio</span>
+            <br>
+            <span class="submit-button">
+                <button type="button" onclick="actualizarCarrito()">Actuar</button>
+            </span>
+            <span class="submit-button">
+                <button type="button" onclick="limpiarCarrito()">Vaciar Carrito</button>
+            </span>
+        </div>
+        <!-- ver como hacer para que se llene esta lista con los datos -->
+        <ul id="idCompra"> 
+            <li></li>
+        </ul>
+    </section>    
 
     <footer class="footer">
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
@@ -46,5 +60,6 @@
         <iconify-icon class="redsocial" icon="entypo-social:pinterest"></iconify-icon>
         <iconify-icon class="redsocial" icon="entypo-social:paypal"></iconify-icon>
     </footer>
+    <script src="js/compra.js"></script>
 </body>
 </html>
