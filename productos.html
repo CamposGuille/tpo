@@ -1,155 +1,3 @@
-<<<<<<<<< Temporary merge branch 1
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="icon" type="image/jpg" href="favicon/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <title>TPO Etapa Inicial</title>
-    
-        
-            
-        
-    
-</head>
-<body>
-    <header>
-        <span class="logo"><img src="img/logo.png" alt="logo" width="150" height="100"></span>
-        <span class="texto_empresa">Alma Argentina Repostería</span>
-    </header>
-    <nav>
-        <a href="index.html" class="botones">Inicio</a>
-        <a href="productos.html" class="botones">Nuestras delicias</a>
-        <a href="servicios.html" class="botones">Servicios</a>
-        <a href="contacto.html" class="botones">Contacto</a>
-        <a href="ubicacion.html" class="botones">Ubicacion</a>
-        <a href="pedidos.html" class="botones">Pedidos</a>
-    </nav>
-    <main class="productos">
-        <h1><strong><em> MOSTRAMOS NUESTRAS MEJORES DELICIAS</em></strong></h1>
-
-        
-        <div class="contenedor"><iframe width="640" height="360" frameborder="0" title="ALMA ARGENTINA REPOSTERIA" src="https://www.kizoa.com/embed-401018728-8788955o1l1" webkitallowfullscreen="true" allowfullscreen="true" mozallowfullscreen="true" ></iframe><br /><b>ALMA ARGENTINA REPOSTERIA</b> - <i><a href="http://www.kizoa.com">Kizoa Movie Maker</a></i>
-         <!-- LISTAS DISFRUTAR NUESTRA REPOSTERIA EN FAMILIA CON AMIGOS !!! -->
-    </div> 
-    </main>
-    <aside>
-        <h2>Nosotros</h2>
-        <p>somos casa de reposteria y panaderia mas grande ciudad vendemos por mayor y menor con efectivo ,trasferencia,mercado pago,tarjetas de credito y debito.Nuestra reposteria elaboraciones caseras y de manera artesanal pasteleria con postres </p>
-        <p>Con este objetivo hemos diseñado una amplia gama de productos para cada persona aficionada a estas elaboraciones puedan disfrutar sabores disponemos tambien tienda online NUESTRO TELEFONO 3516694741 CORREO info@reposteriaalmaargentina.com</p>
-        <p>LA COMBINACION DE MATERIAS PRIMAS DE CALIDAD INSUPERABLE DAN LUGAR A UN PRODUCTO UNICO QUE NO TE DEJARA INDIFERENTE.</p>
-    
-    </aside>
-        
-
-    
-    
-    
- <div class="galeria">
- 
- <div><img class="imagen" src="tutorial-sobre-pasteleria.jpg" alt="">
- <img class="imagen" src="OIP (3).jpg " alt="">
- <img class="imagen" src="OIP (5).jpg" alt=""
-    <img class="imagen" src="OIP (2).jpg" alt="">   
-    <img class="imagen" src="cake-742135_1280.webp" alt="">   
-    <img class="imagen" src="negocio-de-postres.jpg" alt="">
-    <img class="imagen" src="bun-261676_1280.jpg" alt=""> 
-    <img class="imagen" src="macarons-2548818_1280.jpg" >
-    <img class="imagen" src="maxresdefault.jpg">
-    <img class="imagen" src="christmas-cookies-212223_1280.jpg">
-    <img class="imagen" src="criollitos-700x469.jpg">
-    <img class="imagen" src="gingerbread-3856628_1280.jpg">
-    <img class="imagen" src="th (1).jpg">
-    <img class="imagen" src="th.jpg">
-    <img class="imagen" src="cake-4611484_1280.jpg">
-    <img class="imagen" src="woman-5084276_1280.jpg"></div>
- </div>
- 
-    
- 
-
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-            
-            
-            
-            
-        
-        
-    
-    
-            
-            
-         
-            
-          
-    
-    <footer>
-        <p>Realizado por TOTEM PYTHON GROUP T.P.O. Etapa inicial</p>
-    </footer>
-</body>
-</html>
-        
-        
-
-
-
-    
-    
-    
-    
-    
-    
-    
-
-
-    
-        
-        
-    
-    
-        
-        
-        
-        
-        
-        
-    
-    
-        
-        
-    
-    
-        
-    
-    
-
-
-    
-
-        
-    
-
-=========
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -166,7 +14,7 @@
 <body class="grid-container-productos">
     <header class="header">
         <div class="header1">
-            <img class="logo" src="img/logo.png" alt="logo" width="60">
+            <img class="logo" src="img/logo.png" alt="logo" width="80">
             <h1 class="texto_empresa">Alma Argentina Repostería</h1>
         </div>
     </header>
@@ -197,38 +45,51 @@
     <div class="caja-imagenes">
         <div class="ficha" >
             <img src="img/ft1.jpg">
-            <span>Descripción de producto</span>
-            <span>Precio</span>
+            <span id="prod1Desc">Banana Split</span>
+            <span id="prod1Prec">$ 1700</span>
+            <span class="submit-button">
+                <button type="button" onclick="agregarAlCarrito('prod1Desc', 'prod1Prec')">Comprar</button>
+            </span>
         </div>
         <div class="ficha" >
             <img src="img/ft2.jpg">
-            <span>Descripción de producto</span>
-            <span>Precio</span>
+            <span id="prod2Desc">Ni idea que es pero tiene arandamos</span>
+            <span id="prod2Prec">$ 2200</span>
+            <span class="submit-button">
+                <button type="button" onclick="agregarAlCarrito('prod2Desc', 'prod2Prec')">Comprar</button>
+            </span>
         </div>        
         <div class="ficha" >
             <img src="img/ft3.jpg">
-            <span>Descripción de producto</span>
-            <span>Precio</span>
+            <span id="prod3Desc">Tarta de manzana</span>
+            <span id="prod3Prec">$ 1200</span>
+            <span class="submit-button">
+                <button type="button" onclick="agregarAlCarrito('prod3Desc', 'prod3Prec')">Comprar</button>
+            </span>
         </div>  
-        <!-- <div class="ficha" >
-            <img src="img/ft4.jpg">
-            <span>Descripción de producto</span>
-            <span>Precio</span>
-        </div> -->
         <div class="ficha" >
             <img src="img/ft5.jpg">
-            <span>Descripción de producto</span>
-            <span>Precio</span>
+            <span id="prod4Desc">Cheesecake con cubierta de frutilla</span>
+            <span id="prod4Prec">$ 1800</span>
+            <span class="submit-button">
+                <button type="button" onclick="agregarAlCarrito('prod4Desc', 'prod4Prec')">Comprar</button>
+            </span>
         </div>        
         <div class="ficha" >
             <img src="img/ft6.jpg">
-            <span>Descripción de producto</span>
-            <span>Precio</span>
+            <span id="prod5Desc">Cheesecake Clasico</span>
+            <span id="prod5Prec">$ 1600</span>
+            <span class="submit-button">
+                <button type="button" onclick="agregarAlCarrito('prod5Desc', 'prod5Prec')">Comprar</button>
+            </span>
         </div> 
         <div class="ficha" >
             <img src="img/ft7.jpg">
             <span>Descripción de producto</span>
             <span>Precio</span>
+            <span class="submit-button">
+                <button type="submit" >Comprar</button>
+            </span>
         </div>        
     </div>
 
@@ -242,6 +103,7 @@
         <iconify-icon class="redsocial" icon="entypo-social:pinterest"></iconify-icon>
         <iconify-icon class="redsocial" icon="entypo-social:paypal"></iconify-icon>
     </footer>
+    <script src="js/compra.js"></script>
 </body>
 </html>
         
@@ -285,4 +147,3 @@
         
     
 
->>>>>>>>> Temporary merge branch 2
