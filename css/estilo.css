@@ -336,6 +336,12 @@ input, textarea {
 textarea {
     resize: vertical;
 }
+
+/* Error / Success */
+.form-group.error input {
+    border: 1px solid #dc3545;
+}
+
 .submit-button {
     text-align: center;
 }
