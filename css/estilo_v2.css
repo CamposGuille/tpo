@@ -69,6 +69,7 @@ section {
 
 .img-encabezado {
     grid-column-end: span 2;
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.4))
 }
 .img-clima{
     grid-column-end: span 2;
@@ -82,7 +83,73 @@ section {
     font-family: var(--font-titulo);
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.596));
 }
+/* ------------------------ copio el nav del proyecto version 1 ------------ */
+.navbar {
+    grid-column-end: span 12;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center; 
+    margin-top: -1.7em;
+}
 
+.navbar ul {
+    margin: 5px;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+}
+.navbar a{
+    text-decoration: none;
+}
+.navbar i {
+    font-size: 20px;
+    display: none;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+.navbar-link {
+    color: var(--color-letra);/*#000;*/
+    font-weight: 700; /*  ----------------------------------------------*/
+    padding:0 10px 0 10px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: color 2s;
+}
+
+.navbar-link:hover{
+    background-color: var(--color-letra);
+    color: #fff;
+}
+
+@media (max-width: 680px) {
+    .navbar ul {
+        background: var(--color-fondo);
+        border-radius: 12px;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        transition: display 2s;
+    }
+
+    .navbar i {
+        display: block;
+    }
+
+    #toggle-menu:checked ~ .navbar-list {
+        display: flex;
+    }
+} 
+/* ------------------------ fin del nav ------------------------------------ */
 .tarjeta {
     box-shadow: var(--sombra) 0 0 2em;
     border-radius: 2em;
