@@ -1,10 +1,10 @@
 const result = document.querySelector('.resultado');
 const form = document.querySelector('.get-weather');
+miUbicacion();
 
-// function callAPI(event){
-    // event.preventDefault();
-
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=campana,argentina&appid=e99194fae5b76f5191eb2226c96c552f`;
+function buscarClima(latitud,longitud){
+    const llave='e99194fae5b76f5191eb2226c96c552f';
+    const url = `http://api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&appid=${llave}`;
     fetch(url)
         .then(data => {
             return data.json();
@@ -19,7 +19,15 @@ const form = document.querySelector('.get-weather');
         .catch(error => {
             console.log(error);
         })
-// }
+}
+function miUbicacion(){
+   navigator.geolocation.getCurrentPosition(exito);
+}
+function exito(posicion){
+    let latitud=posicion.coords.latitude;
+    let longitud=posicion.coords.longitude;
+    buscarClima(latitud,longitud);
+}
 
 function showWeather(data){
     const {name, main:{temp, temp_min, temp_max}, weather:[arr]} = data;

@@ -150,6 +150,31 @@ section {
     }
 } 
 /* ------------------------ fin del nav ------------------------------------ */
+.aside{
+    box-shadow: var(--sombra) 0 0 2em;
+    border-radius: 2em;
+    padding: 2em;
+    grid-column-start: 9;
+    grid-column-end: 13;
+    text-align: center;
+    margin-top: 2em;
+}
+.article{
+    box-shadow: var(--sombra) 0 0 2em;
+    border-radius: 2em;
+    padding: 2em;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.ft_local{
+    border-radius: 2em;
+    max-width: 35rem; 
+    max-height: 20rem;
+}
+
 .tarjeta {
     box-shadow: var(--sombra) 0 0 2em;
     border-radius: 2em;
@@ -202,9 +227,12 @@ section {
     .img-encabezado, .img-clima {
         grid-column-end: span 2;
     }
-    
+    .aside{
+        grid-column-start: 1;
+    }
     .texto_empresa {
         grid-column-end: span 8;
+        filter: none;
     }
     .grilla {
         gap: 2em 0;
