@@ -1,6 +1,13 @@
 const result = document.querySelector('.resultado');
 const form = document.querySelector('.get-weather');
-miUbicacion();
+let lat= localStorage.getItem("latitud");
+let lon=localStorage.getItem("longitud");
+if (lat == null){
+    miUbicacion();
+} else {
+    buscarClima(lat,lon);
+}
+
 
 function buscarClima(latitud,longitud){
     const llave='e99194fae5b76f5191eb2226c96c552f';
@@ -26,6 +33,8 @@ function miUbicacion(){
 function exito(posicion){
     let latitud=posicion.coords.latitude;
     let longitud=posicion.coords.longitude;
+    localStorage.setItem("latitud", latitud);
+    localStorage.setItem("longitud", longitud);
     buscarClima(latitud,longitud);
 }
 

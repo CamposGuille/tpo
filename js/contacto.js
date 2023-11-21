@@ -1,6 +1,5 @@
 // const formulario = document.getElementsByName('form')[0];   //[0] Primer elemento, el formulario en si mismo.
-const formulario = document.getElementById('form');   //[0] Primer elemento, el formulario en si mismo.
-const elementos = formulario.elements;                          // Elementos del form, no lo usamos en este script.
+const formulario = document.getElementById('form');   //[0] Primer elemento, el formulario en si mismo. const elementos = formulario.elements;                          // Elementos del form, no lo usamos en este script.
 const boton = document.getElementById('b1');    // El botón
 const nameInput = document.getElementById('nombre');
 const phoneInput = document.getElementById('celular');
