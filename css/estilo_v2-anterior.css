@@ -348,39 +348,3 @@ textarea {
         grid-column-start: 1;
     }
 }
-tbody img{
-    width: 7em;
-}
-.mb3 img{
-    border-radius: 12px;
-}
-.ftNueva{
-    border-radius: 15px;
-    margin-top: 1em;
-}
-.form_nuevo{
-    background-color: var(--color-principal);
-    margin:10px auto; 
-    width: 400px; 
-    padding: 20px;
-    border-radius: 2em;
-}
-.form_nuevo button{
-    background-color: var(--color-letra);
-    border-color: black;
-}
-.form_nuevo .btn:hover {
-    background-color: var(--color-letra);
-    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.596));
-    color: white;
-}
-.btn-primary{
-    background-color: var(--color-letra);
-    border-color: black;
-    margin: 10px;
-}
-.btn-primary:hover{    /* Falta lograr el cambio de fondo*/
-    background-color: var(--color-letra);
-    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.596));
-    color: white;
-}
