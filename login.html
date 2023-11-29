@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/estilo_v2.css">
     <link rel="icon" type="image/jpg" href="favicon/favicon.ico">
     <script src="js/buscarClima.js" defer></script>
+    <script src="js/contacto_v2.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
@@ -33,26 +34,37 @@
                     <li><a href="nosotros_v2.html" class="navbar-link">Nosotros</a></li>
                     <li><a href="contacto_v2.html" class="navbar-link">Contacto</a></li>
                     <li><a href="ubicacion_v2.html" class="navbar-link">Ubicacion</a></li>
-                    <li><a href="login.html" class="navbar-link">Ingresar</a></li>
+                    <li><a href="prod.html" class="navbar-link">Ingresar</a></li>
+                    
                     <a href="pedidos.html" class="fa-solid fa-cart-shopping" style="color: black;" ></a>
                 </ul>
             </nav>
         </div>
     </section>
     <section>
+        <h3>Ingreso para manejo administrativo de la página</h3>
+        <p id="comentario">Solo usuarios autorizados</p>
         <div class="grilla">
-            <article class="article"> 
-                    <img class="ft_local" src="img/repo1.jpg" alt="foto del local">
-                    <p>Descubre el encanto de nuestra pasteleria artesanal. Con resetas transmitidas de generación en generación, endulzamos momentos especiales con auténtica tradición y deliciosos sabore</p>
-                    <img class="ft_local" src="img/fto.jpg" alt="foto del local">
-            </article>
-            <aside class="aside">
-                <h2>Novedades</h2>
-                <p>- ¡Te invitamos a nuestro nuevo rincón delicioso! Hemos creado un espacio acogedor donde podrás deleitarte con nuestras exquisitas tortas y postres, acompañados del mejor café o una selección de tés únicos. Sumérgete en un ambiente que combina el sabor de la tradición familiar con la dulzura de nuestros productos. ¡Esperamos verte pronto para compartir momentos dulces y memorables!.</p>
-                <p>- Hemos creado un pastel exclusivo que combina la suavidad de la crema con la intensidad de los frutos del bosque. Cada bocado es una explosión de sabores que te transportará a un mundo de dulzura. Ven y descubre esta delicia que ha conquistado los corazones de nuestros clientes. ¡Te esperamos para que lo pruebes!</p>
-            </aside>
-        </div> 
-        
+            <div class="tarjeta-historia">
+                <div class="formulario">
+                <form action="" id="form" name="form">
+                    <div class="form-group">
+                        <label for="usuario_login">Usuario :</label>
+                        <input type="text" id="usuario_login" name="usuario_login" placeholder="Ingrese usuario" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="clave_login">Clave :</label>
+                        <input type="text" id="clave_login" name="clave_login" placeholder="Ingrese clave" autocomplete="off">
+                    </div>
+                    <div class="submit-button">
+                        <input type="submit" id="bt_login" name="bt_login" value=" Validar " onclick="validar()">
+                    </div>
+                </form>  
+                </div>
+                <h4>Hasta tener finalizado la validación de usuario contra la base de datos puede ingresar con el siguiente link</h4>
+                <a href="prod.html">Administración de productos</a>
+            </div>
+        </div>   
     </section>
     <section>
         <div class="grilla">
