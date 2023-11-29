@@ -21,32 +21,38 @@
 </header>
 <main>
     <div class="container" id="app">
-        <form class="form_nuevo" >
+        <form class="form_nuevo">
         <h3>Editar Producto </h3>
         <p>Precio:{{precio}}</p>
         <div class="formulario">
-            <div class="mb-3">
-            <label for="id">Id</label>
-            <input type="number" name="id" id="id" disabled v-model="id" >
+            <div class="doble">
+            <div class="interiores">
+                <div class="mb-3">
+                <label for="id">Id</label>
+                <input type="number" name="id" id="id" disabled v-model="id" >
+                </div>
+                <div class="mb-3">
+                <label for="descripcion">Descripción</label>
+                <input type="text" name="descripcion" id="descripcion" v-model="descripcion">
+                </div>
+                <div class="mb-3">
+                <label for="precio">Precio</label>
+                <input type="number" name="precio" id="precio" v-model="precio">
+                </div>
+                <div class="mb-3">
+                <label for="stock">Stock</label>
+                <input type="number" name="stock" id="stock" v-model="stock">
+                </div>
             </div>
-            <div class="mb-3">
-            <label for="descripcion">Descripción</label>
-            <input type="text" name="descripcion" id="descripcion" v-model="descripcion">
+            <div class="interiores">
+                <div class="mb-3">
+                <label for="imagen">Imagen</label><br>
+                <input class="int_input" type="text" name="imagen" id="imagen" v-model="imagen">
+                <img class="ftNuevaEdit" width="100" :src="imagen" alt="">
+                </div>
+                <button type="button" class="btn" v-on:click="modificar()">Grabar</button>
             </div>
-            <div class="mb-3">
-            <label for="precio">Precio</label>
-            <input type="number" name="precio" id="precio" v-model="precio">
             </div>
-            <div class="mb-3">
-            <label for="stock">Stock</label>
-            <input type="number" name="stock" id="stock" v-model="stock">
-            </div>
-            <div class="mb-3">
-            <label for="imagen">Imagen</label>
-            <input type="text" name="imagen" id="imagen" v-model="imagen">
-            <img width="100" :src="imagen" alt="">
-            </div>
-            <button type="button" class="btn" v-on:click="modificar()">Grabar</button>
         </div>
         </form>
         </div>
