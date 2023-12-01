@@ -54,15 +54,13 @@
                     </div>
                     <div class="form-group">
                         <label for="clave_login">Clave :</label>
-                        <input type="text" id="clave_login" name="clave_login" placeholder="Ingrese clave" autocomplete="off">
+                        <input type="password" id="clave_login" name="clave_login" placeholder="Ingrese clave" autocomplete="off">
                     </div>
                     <div class="submit-button">
-                        <input type="submit" id="bt_login" name="bt_login" value=" Validar " onclick="validar()">
+                        <input type="button" id="bt_login" name="bt_login" value=" Validar " onclick="levantaUsuarios()">
                     </div>
                 </form>  
                 </div>
-                <h4>Hasta tener finalizado la validación de usuario contra la base de datos puede ingresar con el siguiente link</h4>
-                <a href="prod.html">Administración de productos</a>
             </div>
         </div>   
     </section>
@@ -80,5 +78,6 @@
             </footer>
         </div>
     </section>
+    <script src="js/validarUsuario.js"></script>
 </body>
 </html>

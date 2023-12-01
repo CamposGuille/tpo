@@ -24,24 +24,33 @@
 <form class="form_nuevo">
 <h3>Alta de Producto</h3>
 <div class="formulario">
-    <div class="mb-3">
-        <label for="nombre">Descripción</label><br>
-        <input type="text" name="descripcion" id="descripcion" v-model="descripcion">
-    </div>
-    <div class="mb-3">
-        <label for="precio">Precio</label><br>
-        <input type="number" name="precio" id="precio" v-model="precio">
-    </div>
-    <div class="mb-3">
-        <label for="stock">Stock</label><br>
-        <input type="number" name="stock" id="stock" v-model="stock">
-    </div>
-    <div class="mb-3">
-        <label for="imagen">Imagen</label><br>
-        <input type="text" name="imagen" id="imagen" v-model="imagen">
-        <img class="ftNueva" :src="imagen" alt="">
-    </div>
-    <button type="button" class="btn" v-on:click="grabar()">Grabar</button>
+    <div class="doble">
+        <div class="interiores">
+            <div class="mb-3">
+                <label for="nombre">Descripción</label><br>
+                <input type="text" name="descripcion" id="descripcion" v-model="descripcion">
+            </div>
+            <div class="mb-3">
+                <label for="precio">Precio</label><br>
+                <input type="number" name="precio" id="precio" v-model="precio">
+            </div>
+            <div class="mb-3">
+                <label for="stock">Stock</label><br>
+                <input type="number" name="stock" id="stock" v-model="stock">
+            </div>
+            <!-- <div class="mb-3">
+                <label for="imagen">Imagen</label><br>
+                <input type="text" name="imagen" id="imagen" v-model="imagen">
+            </div> -->
+        </div>
+        <div class="interiores">    
+            <div class="mb-3">
+                <label for="imagen">Imagen</label><br>
+                <input type="text" name="imagen" id="imagen" v-model="imagen">
+                <img class="ftNuevaAlta" :src="imagen" alt="">
+            </div>
+            <button type="button" class="btn" v-on:click="grabar()">Grabar</button>
+        </div>
 </div>
 </form>
 </div>
@@ -58,8 +67,8 @@ crossorigin="anonymous">
 integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
 crossorigin="anonymous">
 </script>
-<script src="./js/main.js"></script>
+<script src="js/main.js"></script>
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-<script src="./js/prod.js"></script>
+<script src="js/prod.js"></script>
 </body>
 </html>

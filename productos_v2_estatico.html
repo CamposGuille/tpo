@@ -42,17 +42,56 @@
     </section>
     <section>
         <div class="grilla">
-            <div class="fichas"></div>
-            <template id="ficha">
-                <div class="ficha">
-                    <img alt="foto del postre" class="formato-img">
-                    <span class="formato-descr"></span>
-                    <span class="formato-precio"></span>
-                    <span class="submit-button">
-                        <button type="button" onclick="agregarAlCarrito('prod1Desc', 'prod1Prec')">Comprar</button>
-                    </span>
-                </div>  
-            </template>
+            <div class="fichas">
+            <div class="ficha" >
+                <img src="img/ft1.jpg">
+                <span id="prod1Desc">Banana Split</span>
+                <span id="prod1Prec">$ 1700</span>
+                <span class="submit-button">
+                    <button type="button" onclick="agregarAlCarrito('prod1Desc', 'prod1Prec')">Comprar</button>
+                </span>
+            </div>
+            <div class="ficha" >
+                <img src="img/ft2.jpg">
+                <span id="prod2Desc">Ni idea que es pero tiene arandamos</span>
+                <span id="prod2Prec">$ 2200</span>
+                <span class="submit-button">
+                    <button type="button" onclick="agregarAlCarrito('prod2Desc', 'prod2Prec')">Comprar</button>
+                </span>
+            </div>        
+            <div class="ficha" >
+                <img src="img/ft3.jpg">
+                <span id="prod3Desc">Tarta de manzana</span>
+                <span id="prod3Prec">$ 1200</span>
+                <span class="submit-button">
+                    <button type="button" onclick="agregarAlCarrito('prod3Desc', 'prod3Prec')">Comprar</button>
+                </span>
+            </div>  
+            <div class="ficha" >
+                <img src="img/ft5.jpg">
+                <span id="prod4Desc">Cheesecake con cubierta de frutilla</span>
+                <span id="prod4Prec">$ 1800</span>
+                <span class="submit-button">
+                    <button type="button" onclick="agregarAlCarrito('prod4Desc', 'prod4Prec')">Comprar</button>
+                </span>
+            </div>        
+            <div class="ficha" >
+                <img src="img/ft6.jpg">
+                <span id="prod5Desc">Cheesecake Clasico</span>
+                <span id="prod5Prec">$ 1600</span>
+                <span class="submit-button">
+                    <button type="button" onclick="agregarAlCarrito('prod5Desc', 'prod5Prec')">Comprar</button>
+                </span>
+            </div> 
+            <div class="ficha" >
+                <img src="img/ft7.jpg">
+                <span>Descripción de producto</span>
+                <span>Precio</span>
+                <span class="submit-button">
+                    <button type="submit" >Comprar</button>
+                </span>
+            </div> 
+            </div>
             <aside class="aside">
                 <h2>Algunas de nuestras delicias</h2>
                 <iframe src="https://www.kizoa.com/embed-401018728-8788955o1l1" webkitallowfullscreen="true" allowfullscreen="true" mozallowfullscreen="true" >
@@ -76,6 +115,5 @@
             </footer>
         </div>
     </section>
-    <script src="js/buscarProd.js"></script>
 </body>
 </html>

@@ -87,7 +87,7 @@ section {
     font-size: 5vw;
     padding: 0px; 
     font-family: var(--font-titulo);
-    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.596));
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.3));
 }
 /* ------------------------ copio el nav del proyecto version 1 ------------ */
 .navbar {
@@ -313,7 +313,7 @@ textarea {
     z-index: 1;
 }
 .ficha span{
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 .ficha img{
     width: 170px;
@@ -401,4 +401,9 @@ tbody img{
     border-radius: 15px;
     margin-top: 1.8em;
     max-width: 350px;
+}
+.ftNuevaAlta{
+    border-radius: 15px;
+    margin-top: 1.5em;
+    max-width: 250px;
 }
