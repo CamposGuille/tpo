@@ -19,7 +19,7 @@ document.getElementById("header").innerHTML=`     <section class="encabezado" st
             <li><a href="contacto_v2.html" class="navbar-link">Contacto</a></li>
             <li><a href="ubicacion_v2.html" class="navbar-link">Ubicacion</a></li>
             <li><a href="login.html" class="navbar-link">Ingresar</a></li>
-            <a href="pedidos.html" class="fa-solid fa-cart-shopping" style="color: black;" ></a>
+            <a href="pedidos_v2.html" class="fa-solid fa-cart-shopping" style="color: black;" ></a>
         </ul>
     </nav>
 </div>
