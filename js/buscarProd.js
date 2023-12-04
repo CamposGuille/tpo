@@ -19,6 +19,7 @@ fetch(url)
 }
 
 function tarjetas(data){
+    console.log(data);
     for(let aux=0; aux<data.length;aux++) {
         const flex = document.querySelector(".fichas");
         const template = document.getElementById("ficha").content;
