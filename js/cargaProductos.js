@@ -1,3 +1,4 @@
+traeProductos();
 
 function traeProductos(){
         const url='https://camposguille.pythonanywhere.com/productos';
