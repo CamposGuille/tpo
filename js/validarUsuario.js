@@ -1,4 +1,4 @@
-const url = `https://camposguille.pythonanywhere.com/admin`;
+const url = `//camposguille.pythonanywhere.com/admin`;
 
 function levantaUsuarios(){
  
