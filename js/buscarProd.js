@@ -1,10 +1,10 @@
 const url = `http://camposguille.pythonanywhere.com/productos`;
-cargaInicial(url);
+cargaInicial();
 
-function cargaInicial(url){
+function cargaInicial(){
 fetch(url)
-    .then(data => {
-        return data.json();
+    .then(dataJSON => {
+        return dataJSON.json();
     })
     .then(dataJSON => {
         if (dataJSON.cod === '404') {
