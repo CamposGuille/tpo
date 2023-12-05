@@ -3,8 +3,8 @@ cargaInicial();
 
 function cargaInicial(){
 fetch(url)
-    .then(dataJSON => {
-        return dataJSON.json();
+    .then(data => {
+        return data.json();
     })
     .then(dataJSON => {
         if (dataJSON.cod === '404') {
@@ -19,6 +19,7 @@ fetch(url)
 }
 
 function tarjetas(data){
+    console.log(data);
     for(let aux=0; aux<data.length;aux++) { 
         const flex = document.querySelector(".fichas");
         const template = document.getElementById("ficha").content;
