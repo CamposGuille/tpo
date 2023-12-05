@@ -1,22 +1,3 @@
-// const url = `http://camposguille.pythonanywhere.com/admin`;
-
-// function levantaUsuarios(){
-//     const url = `http://camposguille.pythonanywhere.com/admin`;
-//     fetch(url)
-//         .then(data => {
-//             return data.json();
-//         })
-//         .then(dataJSON => {
-//             if (dataJSON.cod === '404') {
-//                 console.log('Error con la carga de datos ...');
-//             } else {
-//                 validaUsuario(dataJSON);
-//             }
-//         })
-//         .catch(error => {
-//             console.log(error);
-//         })
-// }
 function levantaUsuarios(){
     const url='https://camposguille.pythonanywhere.com/admin';
     fetch(url)
@@ -28,7 +9,6 @@ function levantaUsuarios(){
         console.error(err);
     })
 }
-
 
 function validaUsuario(data){
     console.log(data);
