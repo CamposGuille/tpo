@@ -1,7 +1,7 @@
 const url = `http://camposguille.pythonanywhere.com/productos`;
-cargaInicial();
+cargaInicial(url);
 
-function cargaInicial(){
+function cargaInicial(url){
 fetch(url)
     .then(data => {
         return data.json();
@@ -19,7 +19,7 @@ fetch(url)
 }
 
 function tarjetas(data){
-    for(let aux=0; aux<data.length;aux++) {
+    for(let aux=0; aux<data.length;aux++) { 
         const flex = document.querySelector(".fichas");
         const template = document.getElementById("ficha").content;
         const clone = template.cloneNode(true);
