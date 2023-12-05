@@ -4,7 +4,6 @@ function traeProductos(){
         fetch(url)
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             this.productos = data;
             tarjetas(data);
             this.cargando=false
@@ -16,7 +15,7 @@ function traeProductos(){
     }
 
     function tarjetas(data){
-        // console.log(data);
+        console.log(data);
         for(let aux=0; aux<data.length;aux++) { 
             const flex = document.querySelector(".fichas");
             const template = document.getElementById("ficha").content;
