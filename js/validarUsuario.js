@@ -1,22 +1,37 @@
-const url = `//camposguille.pythonanywhere.com/admin`;
+// const url = `http://camposguille.pythonanywhere.com/admin`;
 
+// function levantaUsuarios(){
+//     const url = `http://camposguille.pythonanywhere.com/admin`;
+//     fetch(url)
+//         .then(data => {
+//             return data.json();
+//         })
+//         .then(dataJSON => {
+//             if (dataJSON.cod === '404') {
+//                 console.log('Error con la carga de datos ...');
+//             } else {
+//                 validaUsuario(dataJSON);
+//             }
+//         })
+//         .catch(error => {
+//             console.log(error);
+//         })
+// }
 function levantaUsuarios(){
- 
+    const url='https://camposguille.pythonanywhere.com/admin';
     fetch(url)
-        .then(data => {
-            return data.json();
-        })
-        .then(dataJSON => {
-            if (dataJSON.cod === '404') {
-                console.log('Error con la carga de datos ...');
-            } else {
-                validaUsuario(dataJSON);
-            }
-        })
-        .catch(error => {
-            console.log(error);
-        })
-    }
+    .then(response => response.json())
+    .then(data => {
+        this.productos = data;
+        validaUsuario(data);
+        this.cargando=false
+    })
+    .catch(err => {
+        console.error(err);
+        this.error=true
+    })
+}
+
 
 function validaUsuario(data){
     console.log(data);
