@@ -10,8 +10,9 @@ if (lat == null){
 
 
 function buscarClima(latitud,longitud){
-    const llave='e99194fae5b76f5191eb2226c96c552f';
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&appid=${llave}`;
+    // const llave='e99194fae5b76f5191eb2226c96c552f';
+    // const url = `//api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&appid=${llave}`;
+    const url = `//api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&appid=e99194fae5b76f5191eb2226c96c552f`;
     fetch(url)
         .then(data => {
             return data.json();
