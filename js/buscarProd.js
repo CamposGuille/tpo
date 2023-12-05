@@ -19,7 +19,6 @@ fetch(url)
 }
 
 function tarjetas(data){
-    console.log(data);
     for(let aux=0; aux<data.length;aux++) {
         const flex = document.querySelector(".fichas");
         const template = document.getElementById("ficha").content;
@@ -30,7 +29,7 @@ function tarjetas(data){
         let imagen=data[aux].imagen;
         clone.querySelector(".formato-img").setAttribute("src", `${imagen}`);
         clone.querySelector(".formato-descr").innerHTML = `${descripcion}`;
-        clone.querySelector(".formato-precio").innerHTML = `$  ${precio}`;
+        clone.querySelector(".formato-precio").innerHTML = `${precio}`;
         fragment.appendChild(clone);
         flex.appendChild(fragment);
     }   
