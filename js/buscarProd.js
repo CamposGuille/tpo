@@ -30,7 +30,7 @@ function tarjetas(data){
         let imagen=data[aux].imagen;
         clone.querySelector(".formato-img").setAttribute("src", `${imagen}`);
         clone.querySelector(".formato-descr").innerHTML = `${descripcion}`;
-        clone.querySelector(".formato-precio").innerHTML = `$  ${precio}`;
+        clone.querySelector(".formato-precio").innerHTML = `${precio}`;
         fragment.appendChild(clone);
         flex.appendChild(fragment);
     }   
